@@ -1,0 +1,20 @@
+@import "~normalize.css/normalize.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: $white;
+  color: $grey-800;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}

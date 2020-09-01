@@ -1,0 +1,83 @@
+// Type
+
+$font-family-base: "Roboto", sans-serif;
+$font-family-headings: "Lobster", cursive;
+
+// Font
+$font-size-base: 16px;
+$line-height-base: 1.375;
+
+// Colors
+$black: #000;
+$white: #fff;
+$grey-900: #0b0c0c;
+$grey-800: #020202;
+$grey-700: #333;
+$grey-600: #6b6b6b;
+$grey-500: #717171;
+$grey-400: #888;
+$grey-300: #b1b4b6;
+$grey-200: #d3d3d3;
+$grey-150: #ebebeb;
+$grey-100: #f2f6ff;
+$grey-050: #f3f2f1;
+
+// Box shadows
+$box-shadow-default: 0 1px 12px 0 rgba(0, 0, 0, 0.2);
+
+// Spacers
+
+$spacer-0: 0;
+$spacer-1: 4px;
+$spacer-2: 8px;
+$spacer-3: 12px;
+$spacer-4: 16px;
+$spacer-5: 20px;
+$spacer-6: 24px;
+$spacer-7: 28px;
+$spacer-8: 32px;
+$spacer-9: 36px;
+$spacer-10: 40px;
+$spacer-11: 44px;
+$spacer-12: 48px;
+$spacer-13: 52px;
+$spacer-14: 56px;
+$spacer-15: 60px;
+$spacer-16: 64px;
+$spacer-17: 68px;
+$spacer-18: 72px;
+$spacer-19: 76px;
+$spacer-20: 80px;
+
+$spacers: (
+  0: $spacer-0,
+  1: $spacer-1,
+  2: $spacer-2,
+  3: $spacer-3,
+  4: $spacer-4,
+  5: $spacer-5,
+  6: $spacer-6,
+  7: $spacer-7,
+  8: $spacer-8,
+  9: $spacer-9,
+  10: $spacer-10,
+  11: $spacer-11,
+  12: $spacer-12,
+);
+
+// Grid
+$breakpoint-sm: 0;
+$breakpoint-md: rem(768px);
+$breakpoint-lg: rem(1024px);
+$breakpoint-xl: rem(1200px);
+
+$breakpoints: (
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+);
+
+// Transitions
+
+$transition-default: all 0.35s cubic-bezier(0, 0.75, 0.25, 1);

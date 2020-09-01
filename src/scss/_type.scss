@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+html,
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: $line-height-base;
+}
