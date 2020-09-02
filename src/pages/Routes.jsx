@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import HomePage from './HomePage/HomePage';
 import styles from './Routes.module.scss';
+import CreditsPage from './CreditsPage/CreditsPage';
 
 const Routes = () => {
   return (
@@ -9,6 +10,9 @@ const Routes = () => {
       <Switch>
         <Route path="/" exact>
           <HomePage />
+        </Route>
+        <Route path="/credits" exact>
+          <CreditsPage />
         </Route>
         <Route path="*">
           <Redirect to="/" />

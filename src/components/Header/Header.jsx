@@ -1,14 +1,19 @@
 import styles from './Header.module.scss';
 import Text from '../Text/Text';
+import Action from '../Action/Action';
 import React from 'react';
 import SantaHeadIcon from '../Icons/SantaHeadIcon/SantaHeadIcon';
 
 const Header = () => {
   return (
     <header className={styles.Header}>
-      <SantaHeadIcon width={65} />
+      <Action appearance="none" tagName="Link" to="/">
+        <SantaHeadIcon width={65} />
+      </Action>
       <div className={styles.Header__Text}>
-        <Text appearance="h1">Santa Picker</Text>
+        <Action appearance="none" tagName="Link" to="/">
+          <Text appearance="h1">Santa Picker</Text>
+        </Action>
       </div>
     </header>
   );

@@ -26,18 +26,10 @@
   text-align: center;
 }
 
-.Action__Appearance--button-primary,
-.Action__Appearance--button-secondary {
-  color: $white;
-  &:disabled {
-    cursor: default;
-    opacity: 0.5;
-  }
-}
-
 .Action__Appearance--button-primary {
   background-color: $primary-colour;
   border-color: $primary-colour;
+  color: $white;
 
   &:hover:not(:disabled),
   &:focus:not(:disabled),
@@ -45,11 +37,22 @@
     background-color: darken($primary-colour, 5%);
     border-color: darken($primary-colour, 5%);
   }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
 }
 
 .Action__Appearance--button-secondary {
   background-color: $secondary-colour;
   border-color: $secondary-colour;
+  color: $white;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
 
   &:hover:not(:disabled),
   &:focus:not(:disabled),

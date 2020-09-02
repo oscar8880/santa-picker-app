@@ -5,11 +5,27 @@ exports[`matches snapshot 1`] = `
   <footer
     class="Footer"
   >
-    <p
-      class="Text Text__p"
+    <div
+      class="Footer__Item"
     >
-      Footer
-    </p>
+      <a
+        class="Action Action__Appearance--none"
+        href="/credits"
+      >
+        Credits
+      </a>
+    </div>
+    <div
+      class="Footer__Item"
+    >
+      <a
+        class="Action Action__Appearance--none"
+        href="https://github.com/oscar8880"
+        target="_blank"
+      >
+        Github
+      </a>
+    </div>
   </footer>
 </DocumentFragment>
 `;

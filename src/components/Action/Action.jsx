@@ -9,6 +9,7 @@ const Action = ({
   appearance = 'button-primary',
   fullWidth = false,
   children,
+  ...props
 }) => {
   const Tag = tagName === 'Link' ? Link : tagName;
   return (
@@ -20,6 +21,7 @@ const Action = ({
           [styles.Action__FullWidth]: fullWidth,
         },
       )}
+      {...props}
     >
       {children}
     </Tag>
@@ -27,17 +29,17 @@ const Action = ({
 };
 
 Action.propTypes = {
-  tagName: PropTypes.oneOf(['button', 'a', 'link']),
+  tagName: PropTypes.oneOf(['button', 'a', 'Link']),
   appearance: PropTypes.oneOf([
     'button-primary',
     'button-secondary',
     'button-primary-outline',
     'button-secondary-outline',
     'a',
-    'link',
+    'none',
   ]),
   fullWidth: PropTypes.bool,
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 };
 
 export default Action;
