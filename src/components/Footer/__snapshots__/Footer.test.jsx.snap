@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="Footer"
+  >
+    <p
+      class="Text Text__p"
+    >
+      Footer
+    </p>
+  </footer>
+</DocumentFragment>
+`;

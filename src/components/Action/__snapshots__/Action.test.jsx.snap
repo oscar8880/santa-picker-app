@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="Action Action__Appearance--button-primary"
+  />
+</DocumentFragment>
+`;
+
+exports[`matches snapshot with props set 1`] = `
+<DocumentFragment>
+  <a
+    class="Action Action__Appearance--button-secondary-outline"
+  />
+</DocumentFragment>
+`;
