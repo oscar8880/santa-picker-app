@@ -6,6 +6,12 @@ $font-family-headings: "Lobster", cursive;
 // Font
 $font-size-base: 16px;
 $line-height-base: 1.375;
+$font-size-h1: rem(42px);
+$font-size-h2: rem(34px);
+$font-size-h3: rem(28px);
+$font-size-h4: rem(24px);
+$font-size-h5: rem(20px);
+$font-size-h6: rem(18px);
 
 // Colors
 $black: #000;
@@ -21,6 +27,9 @@ $grey-200: #d3d3d3;
 $grey-150: #ebebeb;
 $grey-100: #f2f6ff;
 $grey-050: #f3f2f1;
+
+$primary-colour: #249465;
+$secondary-colour: #ff5c61;
 
 // Box shadows
 $box-shadow-default: 0 1px 12px 0 rgba(0, 0, 0, 0.2);

@@ -2,6 +2,16 @@
 @import "../../scss/variables";
 
 .Header {
-  background-color: $black;
+  align-items: center;
+  background-color: $primary-colour;
   color: $white;
+  display: flex;
+  flex-direction: row;
+  font-family: $font-family-headings;
+  height: 120px;
+  padding-left: $spacer-8;
+}
+
+.Header__Text {
+  padding-left: $spacer-2;
 }

@@ -1,0 +1,42 @@
+@import "../../scss/functions";
+@import "../../scss/variables";
+
+.Text {
+  margin: 0;
+  padding: 0;
+}
+
+.Text__p {
+  font-size: $font-size-base;
+  font-weight: normal;
+}
+
+.Text__h1 {
+  font-size: $font-size-h1;
+  font-weight: bold;
+}
+
+.Text__h2 {
+  font-size: $font-size-h2;
+  font-weight: bold;
+}
+
+.Text__h3 {
+  font-size: $font-size-h3;
+  font-weight: bold;
+}
+
+.Text__h4 {
+  font-size: $font-size-h4;
+  font-weight: bold;
+}
+
+.Text__h5 {
+  font-size: $font-size-h5;
+  font-weight: bold;
+}
+
+.Text__h6 {
+  font-size: $font-size-h6;
+  font-weight: bold;
+}
