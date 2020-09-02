@@ -29,7 +29,7 @@ $grey-100: #f2f6ff;
 $grey-050: #f3f2f1;
 
 $primary-colour: #249465;
-$secondary-colour: #ff5c61;
+$secondary-colour: #f05d5e;
 
 // Box shadows
 $box-shadow-default: 0 1px 12px 0 rgba(0, 0, 0, 0.2);
@@ -90,3 +90,7 @@ $breakpoints: (
 // Transitions
 
 $transition-default: all 0.35s cubic-bezier(0, 0.75, 0.25, 1);
+
+// Miscellaneous
+
+$min-page-height: calc(100vh - 200px);
