@@ -107,7 +107,7 @@ exports[`matches snapshot 1`] = `
         href="/"
       >
         <p
-          class="Text Text__h1"
+          class="Text Text__banner"
         >
           Santa Picker
         </p>

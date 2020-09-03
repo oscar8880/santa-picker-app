@@ -12432,6 +12432,13 @@ react-fast-compare@^3.0.1:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
   integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
 
+react-grid-system@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/react-grid-system/-/react-grid-system-7.0.3.tgz#ef8928e2a07641cae9fa2735637903aa94751a44"
+  integrity sha512-8ppMdkKFu6geeg8bjvR0Yq54aUDcf9ghP5zcWg/po0ThRCbyLvadyNImjN2ZrL/zy3daEJpVtTq638N0FtmPDw==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-helmet-async@^1.0.2:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/react-helmet-async/-/react-helmet-async-1.0.6.tgz#11c15c74e79b3f66670c73779bef3e0e352b1d4e"

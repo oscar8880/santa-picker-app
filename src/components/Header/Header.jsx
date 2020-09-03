@@ -12,7 +12,7 @@ const Header = () => {
       </Action>
       <div className={styles.Header__Text}>
         <Action appearance="none" tagName="Link" to="/">
-          <Text appearance="h1">Santa Picker</Text>
+          <Text appearance="banner">Santa Picker</Text>
         </Action>
       </div>
     </header>

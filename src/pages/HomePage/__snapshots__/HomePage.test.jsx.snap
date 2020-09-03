@@ -5,7 +5,87 @@ exports[`matches snapshot 1`] = `
   <div
     class="HomePage"
   >
-    HomePage
+    <div
+      class="PageWrapper"
+    >
+      <div
+        style="box-sizing: border-box; position: relative; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;"
+      >
+        <div
+          style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: flex-start;"
+        >
+          <div
+            style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
+          >
+            <div
+              class="HomePage__StrapLine"
+            >
+              <h1
+                class="Text Text__h6"
+              >
+                Secret Santa by email
+              </h1>
+            </div>
+            <ul
+              class="HomePage__BlurbTextList"
+            >
+              <li
+                class="HomePage__BlurbTextListItem"
+              >
+                <p
+                  class="Text Text__h4"
+                >
+                  Guaranteed to be random
+                </p>
+              </li>
+              <li
+                class="HomePage__BlurbTextListItem"
+              >
+                <p
+                  class="Text Text__h4"
+                >
+                  Fully anonymous assignments
+                </p>
+              </li>
+              <li
+                class="HomePage__BlurbTextListItem"
+              >
+                <p
+                  class="Text Text__h4"
+                >
+                  No hat required!
+                </p>
+              </li>
+            </ul>
+            <div
+              class="HomePage__CTA"
+            >
+              <button
+                class="Action Action__Appearance--button-secondary"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div
+            style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 41.66666666666667%; flex-basis: 41.66666666666667%; flex-grow: 0; flex-shrink: 0; max-width: 41.66666666666667%; margin-left: 8.333333333333334%;"
+          >
+            <div
+              class="HomePage__Image"
+            >
+              <img
+                alt="Sleigh"
+                src="sleigh.png"
+                width="80%"
+              />
+            </div>
+          </div>
+        </div>
+        <span
+          style="display: table; clear: both;"
+        />
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

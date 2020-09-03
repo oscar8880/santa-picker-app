@@ -4,4 +4,55 @@
 .HomePage {
   display: flex;
   flex-direction: column;
+  padding-bottom: $spacer-12;
+  padding-top: $spacer-10;
+  @media (min-width: $breakpoint-md) {
+    padding-top: $spacer-12;
+  }
+}
+
+.HomePage__StrapLine {
+  padding-bottom: $spacer-8;
+  text-align: center;
+  @media (min-width: $breakpoint-md) {
+    text-align: left;
+  }
+}
+
+.HomePage__BlurbTextList {
+  color: $grey-500;
+  list-style: none;
+  padding-bottom: $spacer-8;
+  text-align: center;
+  @media (min-width: $breakpoint-md) {
+    text-align: left;
+  }
+}
+
+.HomePage__BlurbTextListItem {
+  padding-bottom: $spacer-2;
+}
+
+.HomePage__CTA {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $spacer-8;
+
+  @media (min-width: $breakpoint-md) {
+    justify-content: flex-start;
+  }
+}
+
+.HomePage__Image {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: $spacer-8;
+  width: 80%;
+
+  @media (min-width: $breakpoint-md) {
+    justify-content: flex-start;
+    padding-top: $spacer-9;
+    width: 100%;
+  }
 }
