@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "build",
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2017",
+    "noImplicitAny": false
+  },
+  "compileOnSave": true,
+  "include": ["src"],
+  "exclude": ["**/*.model.ts", "../node_modules"]
+}
