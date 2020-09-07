@@ -6,6 +6,7 @@
   flex-direction: column;
   padding-bottom: $spacer-12;
   padding-top: $spacer-10;
+  width: 100%;
   @media (min-width: $breakpoint-md) {
     padding-top: $spacer-12;
   }
@@ -14,7 +15,8 @@
 .FormPage__Title {
   padding-bottom: $spacer-8;
   text-align: center;
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
+    min-width: 940px;
     text-align: left;
   }
 }
@@ -45,6 +47,7 @@
 
 .FormPage__Checkbox {
   padding-bottom: $spacer-8;
+  text-align: end;
 }
 
 .FormPage__Submit {

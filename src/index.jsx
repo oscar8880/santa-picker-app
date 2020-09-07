@@ -10,6 +10,7 @@ import App from './App';
 
 setConfiguration({
   gutterWidth: 40,
+  gridColumns: 12,
 });
 
 ReactDOM.render(

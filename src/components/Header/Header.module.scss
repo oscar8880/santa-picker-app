@@ -17,7 +17,7 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 948px;
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     justify-content: flex-start;
     padding-left: $spacer-6;
   }

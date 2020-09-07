@@ -38,8 +38,8 @@ const FormPage = () => {
     <div className={styles.FormPage}>
       <PageWrapper>
         <Container fluid>
-          <Row>
-            <Col xs={12}>
+          <Row justify="start">
+            <Col>
               <div className={styles.FormPage__Title}>
                 <Text tagName="h1" appearance="h1">
                   Participants
