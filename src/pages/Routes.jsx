@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import HomePage from './HomePage/HomePage';
+import FormPage from './FormPage/FormPage';
 import styles from './Routes.module.scss';
 import CreditsPage from './CreditsPage/CreditsPage';
 
@@ -10,6 +11,9 @@ const Routes = () => {
       <Switch>
         <Route path="/" exact>
           <HomePage />
+        </Route>
+        <Route path="/form" exact>
+          <FormPage />
         </Route>
         <Route path="/credits" exact>
           <CreditsPage />

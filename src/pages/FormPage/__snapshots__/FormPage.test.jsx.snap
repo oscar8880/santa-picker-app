@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="FormPage"
+  >
+    <div
+      class="PageWrapper"
+    >
+      <div
+        style="box-sizing: border-box; position: relative; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;"
+      >
+        <div
+          style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: flex-start;"
+        >
+          <div
+            style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 100%; flex-basis: 100%; flex-grow: 0; flex-shrink: 0; max-width: 100%; margin-left: 0%;"
+          >
+            <div
+              class="FormPage__Title"
+            >
+              <h1
+                class="Text Text__h1"
+              >
+                Participant details
+              </h1>
+            </div>
+            <div
+              class="FormPage__BlurbText"
+            >
+              <p
+                class="Text Text__h5"
+              >
+                Fill out the name and email address of each person taking part
+              </p>
+            </div>
+          </div>
+        </div>
+        <form
+          action="#"
+        >
+          <div
+            style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: flex-start;"
+          >
+            <div
+              class="FormPage__InputRow"
+            >
+              <div
+                style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
+              >
+                <div
+                  class="FormPage__Input"
+                >
+                  <div
+                    class="FormikTextInput__Container"
+                  >
+                    <label
+                      class="FormikTextInput__Label FormikTextInput__LabelAsPlaceholder"
+                      for="participantName0"
+                    >
+                      Name
+                    </label>
+                    <input
+                      class="FormikTextInput__Input"
+                      id="participantName0"
+                      name="participantName0"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
+              >
+                <div
+                  class="FormPage__Input"
+                >
+                  <div
+                    class="FormikTextInput__Container"
+                  >
+                    <label
+                      class="FormikTextInput__Label FormikTextInput__LabelAsPlaceholder"
+                      for="participantEmail0"
+                    >
+                      Email
+                    </label>
+                    <input
+                      class="FormikTextInput__Input"
+                      id="participantEmail0"
+                      name="participantEmail0"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: flex-start;"
+          >
+            <div
+              class="FormPage__InputRow"
+            >
+              <div
+                style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
+              >
+                <div
+                  class="FormPage__Input"
+                >
+                  <div
+                    class="FormikTextInput__Container"
+                  >
+                    <label
+                      class="FormikTextInput__Label FormikTextInput__LabelAsPlaceholder"
+                      for="participantName1"
+                    >
+                      Name
+                    </label>
+                    <input
+                      class="FormikTextInput__Input"
+                      id="participantName1"
+                      name="participantName1"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
+              >
+                <div
+                  class="FormPage__Input"
+                >
+                  <div
+                    class="FormikTextInput__Container"
+                  >
+                    <label
+                      class="FormikTextInput__Label FormikTextInput__LabelAsPlaceholder"
+                      for="participantEmail1"
+                    >
+                      Email
+                    </label>
+                    <input
+                      class="FormikTextInput__Input"
+                      id="participantEmail1"
+                      name="participantEmail1"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: flex-start;"
+          >
+            <div
+              class="FormPage__InputRow"
+            >
+              <div
+                style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
+              >
+                <div
+                  class="FormPage__Input"
+                >
+                  <div
+                    class="FormikTextInput__Container"
+                  >
+                    <label
+                      class="FormikTextInput__Label FormikTextInput__LabelAsPlaceholder"
+                      for="participantName2"
+                    >
+                      Name
+                    </label>
+                    <input
+                      class="FormikTextInput__Input"
+                      id="participantName2"
+                      name="participantName2"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
+              >
+                <div
+                  class="FormPage__Input"
+                >
+                  <div
+                    class="FormikTextInput__Container"
+                  >
+                    <label
+                      class="FormikTextInput__Label FormikTextInput__LabelAsPlaceholder"
+                      for="participantEmail2"
+                    >
+                      Email
+                    </label>
+                    <input
+                      class="FormikTextInput__Input"
+                      id="participantEmail2"
+                      name="participantEmail2"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <label
+            class="checkbox"
+          >
+            <input
+              id="acceptedTerms"
+              name="acceptedTerms"
+              type="checkbox"
+              value=""
+            />
+            Add a spending limit?
+          </label>
+          <button
+            type="button"
+          >
+            Add
+          </button>
+          <button
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+        <div
+          class="FormPage__BlurbText"
+        >
+          <p
+            class="Text Text__h5"
+          >
+            None of this information is saved or used other than to send out the Santa allocations
+          </p>
+        </div>
+        <span
+          style="display: table; clear: both;"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

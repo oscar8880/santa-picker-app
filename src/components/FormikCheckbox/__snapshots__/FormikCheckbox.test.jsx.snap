@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <form
+    action="#"
+  >
+    <label
+      class="checkbox"
+    >
+      <input
+        id="test"
+        label="test"
+        name="test"
+        type="checkbox"
+        value=""
+      />
+    </label>
+  </form>
+</DocumentFragment>
+`;

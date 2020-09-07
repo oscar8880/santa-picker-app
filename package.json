@@ -16,9 +16,11 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "formik": "^2.1.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "yup": "^0.29.3"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.0.21",

@@ -30,7 +30,9 @@ const HomePage = () => {
                 </li>
               </ul>
               <div className={styles.HomePage__CTA}>
-                <Action appearance="button-secondary">Get Started</Action>
+                <Action tagName="Link" to="/form" appearance="button-secondary">
+                  Get Started
+                </Action>
               </div>
             </Col>
             <Col xs={12} md={6} lg={5} offset={{ lg: 1 }}>

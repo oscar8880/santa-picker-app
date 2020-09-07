@@ -1,0 +1,42 @@
+@import "../../scss/functions";
+@import "../../scss/variables";
+
+.FormPage {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $spacer-12;
+  padding-top: $spacer-10;
+  @media (min-width: $breakpoint-md) {
+    padding-top: $spacer-12;
+  }
+}
+
+.FormPage__Title {
+  padding-bottom: $spacer-4;
+}
+
+.FormPage__BlurbText {
+  color: $grey-500;
+  padding-bottom: $spacer-8;
+}
+
+.FormPage__InputRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.FormPage__Input {
+  padding-bottom: $spacer-8;
+}
+
+.FormPage__CTA {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $spacer-8;
+
+  @media (min-width: $breakpoint-md) {
+    justify-content: flex-start;
+  }
+}

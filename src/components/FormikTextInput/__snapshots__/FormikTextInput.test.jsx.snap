@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <form
+    action="#"
+  >
+    <div
+      class="FormikTextInput__Container"
+    >
+      <label
+        class="FormikTextInput__Label FormikTextInput__LabelAsPlaceholder"
+        for="input"
+      >
+        Input
+      </label>
+      <input
+        class="FormikTextInput__Input"
+        id="input"
+        name="input"
+        value=""
+      />
+    </div>
+  </form>
+</DocumentFragment>
+`;

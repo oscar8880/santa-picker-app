@@ -1,0 +1,48 @@
+@import "../../scss/functions";
+@import "../../scss/variables";
+
+.FormikTextInput__Container {
+  position: relative;
+}
+
+.FormikTextInput__Input {
+  border: 1px solid $grey-300;
+  border-radius: 4px;
+  padding-bottom: $spacer-4;
+  padding-left: $spacer-4;
+  padding-top: $spacer-4;
+  width: 100%;
+}
+
+.FormikTextInput__Label {
+  color: $grey-600;
+  position: absolute;
+  transition: $transition-default;
+}
+
+.FormikTextInput__LabelAsLabel {
+  background-color: $white;
+  color: $grey-600;
+  font-size: $font-size-small;
+  font-weight: bolder;
+  left: $spacer-4;
+  padding-left: $spacer-1;
+  padding-right: $spacer-1;
+  top: -$spacer-2 - 2px;
+}
+
+.FormikTextInput__LabelAsPlaceholder {
+  color: $grey-600;
+  left: $spacer-4;
+  position: absolute;
+  top: $spacer-4;
+}
+
+.FormikTextInput__Error {
+  color: $danger-colour;
+  font-size: $font-size-xsmall;
+  font-weight: bolder;
+  padding-left: $spacer-4;
+  padding-top: $spacer-1;
+  position: absolute;
+}

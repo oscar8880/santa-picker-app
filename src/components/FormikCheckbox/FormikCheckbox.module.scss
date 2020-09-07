@@ -1,0 +1,120 @@
+@import "../../scss/functions";
+@import "../../scss/variables";
+
+.FormikCheckbox {
+  align-items: center;
+  -webkit-appearance: none;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  transition: $transition-default;
+}
+
+.FormikCheckbox__Appearance--button-primary,
+.FormikCheckbox__Appearance--button-secondary,
+.FormikCheckbox__Appearance--button-primary-outline,
+.FormikCheckbox__Appearance--button-secondary-outline {
+  border-style: solid;
+  border-width: 1px;
+  display: inline-flex;
+  font-family: $font-family-base;
+  font-weight: bold;
+  justify-content: center;
+  line-height: rem(22px);
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.FormikCheckbox__Appearance--button-primary {
+  background-color: $primary-colour;
+  border-color: $primary-colour;
+  color: $white;
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled),
+  &:active:not(:disabled) {
+    background-color: darken($primary-colour, 5%);
+    border-color: darken($primary-colour, 5%);
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+.FormikCheckbox__Appearance--button-secondary {
+  background-color: $secondary-colour;
+  border-color: $secondary-colour;
+  color: $white;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled),
+  &:active:not(:disabled) {
+    background-color: darken($secondary-colour, 5%);
+    border-color: darken($secondary-colour, 5%);
+  }
+}
+
+.FormikCheckbox__Appearance--button-primary-outline,
+.FormikCheckbox__Appearance--button-secondary-outline {
+  background-color: transparent;
+}
+
+.FormikCheckbox__Appearance--button-primary-outline {
+  border-color: $primary-colour;
+  color: $primary-colour;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary-colour;
+    color: $white;
+  }
+}
+
+.FormikCheckbox__Appearance--button-secondary-outline {
+  border-color: $secondary-colour;
+  color: $secondary-colour;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $secondary-colour;
+    color: $white;
+  }
+}
+
+.FormikCheckbox__Appearance--a {
+  background-color: transparent;
+  color: #007aff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken(#007aff, 5%);
+  }
+}
+
+.FormikCheckbox__Appearance--none {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  text-align: inherit;
+}
+
+.FormikCheckbox__FullWidth {
+  width: 100%;
+}
