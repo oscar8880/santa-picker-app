@@ -65,12 +65,12 @@ const FormPage = () => {
                   {generateNameAndEmailFields(numParticipants)}
                   <Row>
                     <Col xs={12} sm={6}>
-                      <div className={styles.FormPage__Input}>
+                      <div className={styles.FormPage__Button}>
                         <Action
                           tagName="button"
                           fullWidth={true}
                           type="button"
-                          appearance="button-secondary-outline"
+                          appearance="button-primary-outline"
                           onClick={() => {
                             setFieldValue(
                               `participantName${numParticipants - 1}`,
@@ -92,12 +92,12 @@ const FormPage = () => {
                       </div>
                     </Col>
                     <Col xs={12} sm={6}>
-                      <div className={styles.FormPage__Input}>
+                      <div className={styles.FormPage__Button}>
                         <Action
                           fullWidth={true}
                           tagName="button"
                           type="button"
-                          appearance="button-secondary"
+                          appearance="button-primary"
                           onClick={() =>
                             setNumParticipants(
                               numParticipants < 30
@@ -132,10 +132,10 @@ const FormPage = () => {
                   {spendingLimitChecked && (
                     <Row key="spendingLimit">
                       <div className={styles.FormPage__InputRow}>
-                        <Col xs={12} sm={6}>
+                        <Col xs={12} sm={6} offset={{ sm: 6 }}>
                           <div className={styles.FormPage__Input}>
                             <FormikTextInput
-                              label="Spending limit"
+                              label="Spend limit"
                               name="spendingLimit"
                               id="spendingLimit"
                               type="number"
@@ -146,14 +146,14 @@ const FormPage = () => {
                     </Row>
                   )}
                 </div>
-                <Row justify="center">
+                <Row justify="end">
                   <Col xs={12} sm={6}>
                     <div className={styles.FormPage__Submit}>
                       <Action
                         tagName="button"
                         fullWidth={true}
                         type="submit"
-                        appearance="button-primary"
+                        appearance="button-secondary"
                       >
                         Submit
                       </Action>
@@ -164,11 +164,11 @@ const FormPage = () => {
             )}
           </Formik>
           <Row>
-            <Col>
+            <Col md={6} offset={{ md: 6 }}>
               <div className={styles.FormPage__BlurbText}>
-                <Text tagName="p" appearance="p">
+                <Text>
                   P.S. None of this information is saved or used other than to
-                  send out the Santa allocations
+                  send out the Santa allocations!
                 </Text>
               </div>
             </Col>

@@ -353,10 +353,10 @@ exports[`matches snapshot 1`] = `
                 style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
               >
                 <div
-                  class="FormPage__Input"
+                  class="FormPage__Button"
                 >
                   <button
-                    class="Action Action__Appearance--button-secondary-outline Action__FullWidth"
+                    class="Action Action__Appearance--button-primary-outline Action__FullWidth"
                     type="button"
                   >
                     Remove participant
@@ -367,10 +367,10 @@ exports[`matches snapshot 1`] = `
                 style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
               >
                 <div
-                  class="FormPage__Input"
+                  class="FormPage__Button"
                 >
                   <button
-                    class="Action Action__Appearance--button-secondary Action__FullWidth"
+                    class="Action Action__Appearance--button-primary Action__FullWidth"
                     type="button"
                   >
                     Add participant
@@ -413,7 +413,7 @@ exports[`matches snapshot 1`] = `
             </div>
           </div>
           <div
-            style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: center;"
+            style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: flex-end;"
           >
             <div
               style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
@@ -422,7 +422,7 @@ exports[`matches snapshot 1`] = `
                 class="FormPage__Submit"
               >
                 <button
-                  class="Action Action__Appearance--button-primary Action__FullWidth"
+                  class="Action Action__Appearance--button-secondary Action__FullWidth"
                   type="submit"
                 >
                   Submit
@@ -435,7 +435,7 @@ exports[`matches snapshot 1`] = `
           style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: flex-start;"
         >
           <div
-            style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 100%; flex-basis: 0px; flex-grow: 1; flex-shrink: 0; max-width: 100%; margin-left: 0%;"
+            style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 50%;"
           >
             <div
               class="FormPage__BlurbText"
@@ -443,7 +443,7 @@ exports[`matches snapshot 1`] = `
               <p
                 class="Text Text__p"
               >
-                P.S. None of this information is saved or used other than to send out the Santa allocations
+                P.S. None of this information is saved or used other than to send out the Santa allocations!
               </p>
             </div>
           </div>
