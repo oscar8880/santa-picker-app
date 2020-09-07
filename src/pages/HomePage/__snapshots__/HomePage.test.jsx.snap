@@ -33,7 +33,7 @@ exports[`matches snapshot 1`] = `
                 class="HomePage__BlurbTextListItem"
               >
                 <p
-                  class="Text Text__h4"
+                  class="Text Text__h5"
                 >
                   Guaranteed to be random
                 </p>
@@ -42,7 +42,7 @@ exports[`matches snapshot 1`] = `
                 class="HomePage__BlurbTextListItem"
               >
                 <p
-                  class="Text Text__h4"
+                  class="Text Text__h5"
                 >
                   Fully anonymous assignments
                 </p>
@@ -51,7 +51,7 @@ exports[`matches snapshot 1`] = `
                 class="HomePage__BlurbTextListItem"
               >
                 <p
-                  class="Text Text__h4"
+                  class="Text Text__h5"
                 >
                   No hat required!
                 </p>
@@ -60,11 +60,12 @@ exports[`matches snapshot 1`] = `
             <div
               class="HomePage__CTA"
             >
-              <button
+              <a
                 class="Action Action__Appearance--button-secondary"
+                href="/form"
               >
                 Get Started
-              </button>
+              </a>
             </div>
           </div>
           <div

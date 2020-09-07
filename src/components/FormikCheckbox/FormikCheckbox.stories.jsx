@@ -1,6 +1,6 @@
 import React from 'react';
 import FormikCheckbox from './FormikCheckbox';
-import { Formik, Form } from 'formik';
+import { Formik } from 'formik';
 
 export default {
   component: FormikCheckbox,
@@ -9,10 +9,8 @@ export default {
 
 export const Default = () => {
   return (
-    <Formik initialValues={{}} onSubmit={() => {}}>
-      <Form>
-        <FormikCheckbox name="oi" label="Input" />
-      </Form>
+    <Formik initialValues={{ name: false }} onSubmit={() => {}}>
+      <FormikCheckbox name="test" label="Do you agree?" id="test" />
     </Formik>
   );
 };

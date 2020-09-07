@@ -1,29 +1,39 @@
-// import styles from './FormikCheckbox.module.scss';
+import styles from './FormikCheckbox.module.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 // import classNames from 'classnames';
 import { useField } from 'formik';
 
-const FormikCheckbox = ({ children, ...props }) => {
-  const [field, meta] = useField({ ...props, type: 'checkbox' });
+const FormikCheckbox = ({ label, id, name, onChange, ...props }) => {
+  const [field] = useField({ ...props, name, type: 'checkbox' });
+
+  const handleChange = (event) => {
+    field.onChange(event);
+    onChange && onChange(!field.value);
+  };
+
   return (
-    <>
-      <label className="checkbox">
-        <input type="checkbox" {...field} {...props} />
-        {children}
+    <div className={styles.FormikCheckbox__Container}>
+      <input
+        type="checkbox"
+        id={id}
+        className={styles.FormikCheckbox__Input}
+        {...field}
+        {...props}
+        onChange={handleChange}
+      />
+      <label className={styles.FormikCheckbox__Label} htmlFor={id}>
+        {label}
       </label>
-      {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
-      ) : null}
-    </>
+    </div>
   );
 };
 
 FormikCheckbox.propTypes = {
   label: PropTypes.string,
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  onChange: PropTypes.func,
 };
 
 export default FormikCheckbox;

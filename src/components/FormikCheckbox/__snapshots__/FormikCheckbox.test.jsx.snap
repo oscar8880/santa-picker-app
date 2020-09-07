@@ -5,17 +5,23 @@ exports[`matches snapshot 1`] = `
   <form
     action="#"
   >
-    <label
-      class="checkbox"
+    <div
+      class="FormikCheckbox__Container"
     >
       <input
+        class="FormikCheckbox__Input"
         id="test"
-        label="test"
         name="test"
         type="checkbox"
         value=""
       />
-    </label>
+      <label
+        class="FormikCheckbox__Label"
+        for="test"
+      >
+        test
+      </label>
+    </div>
   </form>
 </DocumentFragment>
 `;

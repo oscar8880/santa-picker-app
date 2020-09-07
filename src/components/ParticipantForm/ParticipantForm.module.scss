@@ -1,0 +1,38 @@
+@import "../../scss/functions";
+@import "../../scss/variables";
+
+.ParticipantForm__InputRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ParticipantForm__Input {
+  padding-bottom: $spacer-6;
+  @media (min-width: $breakpoint-md) {
+    padding-bottom: $spacer-8;
+  }
+}
+
+.ParticipantForm__Participant {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: $spacer-2;
+  @media (min-width: $breakpoint-md) {
+    justify-content: left;
+  }
+}
+
+.ParticipantForm__Icon {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-right: $spacer-2;
+  opacity: 0.7;
+  width: 40px;
+}

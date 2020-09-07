@@ -20,13 +20,13 @@ const HomePage = () => {
               </div>
               <ul className={styles.HomePage__BlurbTextList}>
                 <li className={styles.HomePage__BlurbTextListItem}>
-                  <Text appearance="h4">Guaranteed to be random</Text>
+                  <Text appearance="h5">Guaranteed to be random</Text>
                 </li>
                 <li className={styles.HomePage__BlurbTextListItem}>
-                  <Text appearance="h4">Fully anonymous assignments</Text>
+                  <Text appearance="h5">Fully anonymous assignments</Text>
                 </li>
                 <li className={styles.HomePage__BlurbTextListItem}>
-                  <Text appearance="h4">No hat required!</Text>
+                  <Text appearance="h5">No hat required!</Text>
                 </li>
               </ul>
               <div className={styles.HomePage__CTA}>

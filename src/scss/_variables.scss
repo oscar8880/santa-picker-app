@@ -95,6 +95,10 @@ $breakpoints: (
 
 $transition-default: all 0.35s cubic-bezier(0, 0.75, 0.25, 1);
 
+// SVGs
+
+$white-tick: "data:image/svg+xml;charset=UTF-8,%3csvg width='40' height='32' viewBox='0 0 10 8' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 4.076l2.041 2.03L8.964 1' stroke='%23FFF' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e";
+
 // Miscellaneous
 
 $min-page-height: calc(100vh - 170px);
