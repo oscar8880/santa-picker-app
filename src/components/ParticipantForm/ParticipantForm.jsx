@@ -49,8 +49,8 @@ export const getInitialValues = (
 
 const iconColours = [
   '#FF3A2F',
+  '#FFA500',
   '#FFCB17',
-  '#FCB600',
   '#798517',
   '#226F61',
   '#AD85FF',

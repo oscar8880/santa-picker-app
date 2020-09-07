@@ -59,7 +59,7 @@ const FormPage = () => {
             onSubmit={handleSubmit}
             setFieldValue
           >
-            {(formikProps) => (
+            {({ setFieldValue }) => (
               <Form>
                 <div className={styles.FormPage__Section}>
                   {generateNameAndEmailFields(numParticipants)}
@@ -71,13 +71,21 @@ const FormPage = () => {
                           fullWidth={true}
                           type="button"
                           appearance="button-secondary-outline"
-                          onClick={() =>
+                          onClick={() => {
+                            setFieldValue(
+                              `participantName${numParticipants - 1}`,
+                              '',
+                            );
+                            setFieldValue(
+                              `participantEmail${numParticipants - 1}`,
+                              '',
+                            );
                             setNumParticipants(
                               numParticipants > 3
                                 ? numParticipants - 1
                                 : numParticipants,
-                            )
-                          }
+                            );
+                          }}
                         >
                           Remove participant
                         </Action>
@@ -115,7 +123,7 @@ const FormPage = () => {
                           label="Include a recommended spend limit?"
                           onChange={() => {
                             setSpendingLimitChecked(!spendingLimitChecked);
-                            formikProps.setFieldValue('spendingLimit', '');
+                            setFieldValue('spendingLimit', '');
                           }}
                         />
                       </div>

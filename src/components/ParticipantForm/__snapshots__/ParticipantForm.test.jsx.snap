@@ -118,7 +118,7 @@ exports[`matches snapshot 1`] = `
           >
             <div
               class="ParticipantForm__Icon"
-              style="background-color: rgb(255, 203, 23);"
+              style="background-color: rgb(255, 165, 0);"
             >
               <svg
                 viewBox="0 0 512 512"
@@ -219,7 +219,7 @@ exports[`matches snapshot 1`] = `
           >
             <div
               class="ParticipantForm__Icon"
-              style="background-color: rgb(252, 182, 0);"
+              style="background-color: rgb(255, 203, 23);"
             >
               <svg
                 viewBox="0 0 512 512"
