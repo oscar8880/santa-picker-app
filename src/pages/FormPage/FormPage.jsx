@@ -12,6 +12,7 @@ import {
   generateNameAndEmailFields,
   getInitialValues,
 } from '../../components/ParticipantForm/ParticipantForm';
+import { request, defaultOptions } from '../../utils/request';
 
 const FormPage = () => {
   const [numParticipants, setNumParticipants] = useState(3);
@@ -31,7 +32,27 @@ const FormPage = () => {
   }, [numParticipants, spendingLimitChecked]);
 
   const handleSubmit = (values) => {
-    console.log(values);
+    const requestBody = {
+      organiserName: values.organiserName,
+      spendingLimit: values.spendingLimit,
+      contacts: [],
+    };
+
+    for (let i = 0; i < numParticipants; i++) {
+      requestBody.contacts.push({
+        name: values[`participantName${i}`],
+        email: values[`participantEmail${i}`],
+      });
+    }
+
+    request('/email', {
+      ...defaultOptions,
+      method: 'POST',
+      headers: {
+        ...defaultOptions.headers,
+      },
+      body: requestBody,
+    });
   };
 
   return (
@@ -138,7 +159,7 @@ const FormPage = () => {
                               label="Spend limit"
                               name="spendingLimit"
                               id="spendingLimit"
-                              type="number"
+                              type="text"
                             />
                           </div>
                         </Col>
@@ -146,6 +167,20 @@ const FormPage = () => {
                     </Row>
                   )}
                 </div>
+                <Row key="organiserName">
+                  <div className={styles.FormPage__InputRow}>
+                    <Col xs={12} sm={6} offset={{ sm: 6 }}>
+                      <div className={styles.FormPage__Input}>
+                        <FormikTextInput
+                          label="Organiser name"
+                          name="organiserName"
+                          id="organiserName"
+                          type="text"
+                        />
+                      </div>
+                    </Col>
+                  </div>
+                </Row>
                 <Row justify="end">
                   <Col xs={12} sm={6}>
                     <div className={styles.FormPage__Submit}>

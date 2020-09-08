@@ -6,7 +6,6 @@ import * as cors from 'cors';
 
 import index from './routes/index';
 import email from './routes/email';
-require('dotenv').config();
 
 const origin = process.env.WEB_ORIGIN;
 const app = express();

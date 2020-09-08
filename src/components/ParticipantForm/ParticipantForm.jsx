@@ -5,6 +5,10 @@ import { Row, Col } from 'react-grid-system';
 import * as Yup from 'yup';
 import Text from '../../components/Text/Text';
 import SantaHatIcon from '../Icons/SantaHatIcon/SantaHatIcon';
+import {
+  includesCurrencySymbol,
+  validCurrencyAmount,
+} from '../../constants/regex';
 
 export const getFormValidationSchema = (
   numParticipants = 3,
@@ -23,10 +27,16 @@ export const getFormValidationSchema = (
   }
 
   if (spendingLimitChecked) {
-    schema.spendingLimit = Yup.number()
+    schema.spendingLimit = Yup.string()
       .required('Required')
-      .moreThan(0, 'Must be greater than zero');
+      .matches(includesCurrencySymbol, 'Please specify a currency')
+      .matches(validCurrencyAmount, 'Please enter a valid amount');
   }
+
+  schema.organiserName = Yup.string()
+    .required('Required')
+    .min(2, 'Must be at least two characters')
+    .max(30, 'Must be 30 characters or fewer');
 
   return Yup.object().shape(schema);
 };
@@ -37,13 +47,16 @@ export const getInitialValues = (
 ) => {
   const values = {};
   for (let i = 0; i < numParticipants; i++) {
-    values[`participantName${i}`] = '';
-    values[`participantEmail${i}`] = '';
+    values[`participantName${i}`] = 'Oscar';
+    values[`participantEmail${i}`] = 'o@z.com';
   }
 
   if (spendingLimitChecked) {
-    values.spendingLimit = 0;
+    values.spendingLimit = '';
   }
+
+  values.organiserName = '';
+
   return values;
 };
 
