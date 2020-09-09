@@ -1,9 +1,3 @@
-export interface SantaPickerRequestDetails {
-  organiserName: string;
-  contacts: Contact[];
-  spendingLimit?: string;
-}
-
 export interface Contact {
   name: string;
   email: string;

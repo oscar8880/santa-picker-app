@@ -3,7 +3,7 @@
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="HomePage"
+    class="ErrorPage"
   >
     <div
       class="PageWrapper"
@@ -18,53 +18,53 @@ exports[`matches snapshot 1`] = `
             style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 0%;"
           >
             <div
-              class="HomePage__StrapLine"
+              class="ErrorPage__StrapLine"
             >
               <h1
                 class="Text Text__h6"
               >
-                Secret Santa by email
+                Oops!
               </h1>
             </div>
             <ul
-              class="HomePage__BlurbTextList"
+              class="ErrorPage__BlurbTextList"
             >
               <li
-                class="HomePage__BlurbTextListItem"
+                class="ErrorPage__BlurbTextListItem"
               >
                 <p
                   class="Text Text__h5"
                 >
-                  Guaranteed to be random
+                  Santa got stuck along the way and wasn't able to deliver the emails
                 </p>
               </li>
               <li
-                class="HomePage__BlurbTextListItem"
+                class="ErrorPage__BlurbTextListItem"
               >
                 <p
                   class="Text Text__h5"
                 >
-                  Fully anonymous assignments
+                  There's a good chance he's already used up his email quota
                 </p>
               </li>
               <li
-                class="HomePage__BlurbTextListItem"
+                class="ErrorPage__BlurbTextListItem"
               >
                 <p
                   class="Text Text__h5"
                 >
-                  No hat required!
+                  Please try again
                 </p>
               </li>
             </ul>
             <div
-              class="HomePage__CTA"
+              class="ErrorPage__CTA"
             >
               <a
                 class="Action Action__Appearance--button-secondary"
-                href="/form"
+                href="/"
               >
-                Get Started
+                Home
               </a>
             </div>
           </div>
@@ -72,11 +72,11 @@ exports[`matches snapshot 1`] = `
             style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 41.66666666666667%; flex-basis: 41.66666666666667%; flex-grow: 0; flex-shrink: 0; max-width: 41.66666666666667%; margin-left: 8.333333333333334%;"
           >
             <div
-              class="HomePage__Image"
+              class="ErrorPage__Image"
             >
               <img
                 alt="Sleigh"
-                src="chimneyPresent.png"
+                src="chimneySanta.png"
                 width="80%"
               />
             </div>

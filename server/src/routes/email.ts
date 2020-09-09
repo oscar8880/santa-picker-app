@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { SantaPickerRequestDetails } from '../model/contactDetails.model';
+import { assignRandomContacts } from '../utils/random';
 const sgMail = require('@sendgrid/mail');
 
 const router = express.Router();
@@ -8,10 +8,15 @@ require('dotenv').config();
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 router.post('/', async (req, res) => {
-  const requestDetails: SantaPickerRequestDetails = req.body;
-  console.log(requestDetails);
+  const { contacts, organiserName, spendingLimit } = req.body;
+  const pairedContacts = assignRandomContacts(contacts);
+
+  console.log(pairedContacts);
+  console.log(organiserName);
+  console.log(spendingLimit);
+
   const status = 200;
-  res.status(status).json(requestDetails);
+  res.status(status).json(pairedContacts);
 });
 
 export default router;

@@ -1,7 +1,7 @@
 @import "../../scss/functions";
 @import "../../scss/variables";
 
-.HomePage {
+.ErrorPage {
   display: flex;
   flex-direction: column;
   padding-top: $spacer-10;
@@ -11,7 +11,7 @@
   }
 }
 
-.HomePage__StrapLine {
+.ErrorPage__StrapLine {
   padding-bottom: $spacer-8;
   text-align: center;
   @media (min-width: $breakpoint-md) {
@@ -19,21 +19,21 @@
   }
 }
 
-.HomePage__BlurbTextList {
+.ErrorPage__BlurbTextList {
   list-style: none;
-  padding-bottom: $spacer-8;
+  padding-bottom: $spacer-4;
   text-align: center;
   @media (min-width: $breakpoint-md) {
     text-align: left;
   }
 }
 
-.HomePage__BlurbTextListItem {
+.ErrorPage__BlurbTextListItem {
   color: $grey-500;
-  padding-bottom: $spacer-2;
+  padding-bottom: $spacer-6;
 }
 
-.HomePage__CTA {
+.ErrorPage__CTA {
   display: flex;
   justify-content: center;
   padding-bottom: $spacer-8;
@@ -43,7 +43,7 @@
   }
 }
 
-.HomePage__Image {
+.ErrorPage__Image {
   display: flex;
   justify-content: center;
   margin: 0 auto;

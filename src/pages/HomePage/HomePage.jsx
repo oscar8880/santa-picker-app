@@ -4,7 +4,7 @@ import Text from '../../components/Text/Text';
 import Action from '../../components/Action/Action';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import { Container, Row, Col } from 'react-grid-system';
-import sleighImage from '../../images/sleigh.png';
+import presentImage from '../../images/chimneyPresent.png';
 
 const HomePage = () => {
   return (
@@ -37,7 +37,7 @@ const HomePage = () => {
             </Col>
             <Col xs={12} md={6} lg={5} offset={{ lg: 1 }}>
               <div className={styles.HomePage__Image}>
-                <img src={sleighImage} alt="Sleigh" width="80%"></img>
+                <img src={presentImage} alt="Sleigh" width="80%"></img>
               </div>
             </Col>
           </Row>

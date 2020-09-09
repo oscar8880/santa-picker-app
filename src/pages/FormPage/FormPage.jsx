@@ -6,6 +6,7 @@ import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import FormikTextInput from '../../components/FormikTextInput/FormikTextInput';
 import { Container, Row, Col } from 'react-grid-system';
 import { Formik, Form } from 'formik';
+import history from '../../history';
 import FormikCheckbox from '../../components/FormikCheckbox/FormikCheckbox';
 import {
   getFormValidationSchema,
@@ -52,7 +53,15 @@ const FormPage = () => {
         ...defaultOptions.headers,
       },
       body: requestBody,
-    });
+    })
+      .then((response) => {
+        console.log(response);
+        history.push('/submitted');
+      })
+      .catch((error) => {
+        console.log(error);
+        history.push('/error');
+      });
   };
 
   return (

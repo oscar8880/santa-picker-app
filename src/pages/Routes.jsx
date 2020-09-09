@@ -4,6 +4,8 @@ import HomePage from './HomePage/HomePage';
 import FormPage from './FormPage/FormPage';
 import styles from './Routes.module.scss';
 import CreditsPage from './CreditsPage/CreditsPage';
+import SubmittedPage from './SubmittedPage/SubmittedPage';
+import ErrorPage from './ErrorPage/ErrorPage';
 
 const Routes = () => {
   return (
@@ -14,6 +16,12 @@ const Routes = () => {
         </Route>
         <Route path="/form" exact>
           <FormPage />
+        </Route>
+        <Route path="/submitted" exact>
+          <SubmittedPage />
+        </Route>
+        <Route path="/error" exact>
+          <ErrorPage />
         </Route>
         <Route path="/credits" exact>
           <CreditsPage />

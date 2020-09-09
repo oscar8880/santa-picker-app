@@ -47,8 +47,8 @@ export const getInitialValues = (
 ) => {
   const values = {};
   for (let i = 0; i < numParticipants; i++) {
-    values[`participantName${i}`] = 'Oscar';
-    values[`participantEmail${i}`] = 'o@z.com';
+    values[`participantName${i}`] = `Test${i}`;
+    values[`participantEmail${i}`] = `test${i}@test.com`;
   }
 
   if (spendingLimitChecked) {
