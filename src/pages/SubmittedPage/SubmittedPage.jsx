@@ -26,7 +26,7 @@ const SubmittedPage = () => {
                 </li>
                 <li className={styles.SubmittedPage__BlurbTextListItem}>
                   <Text appearance="h5">
-                    The courrier elves might get lost so check your spam folder
+                    The courier elves might get lost so check your spam folder
                     if they&apos;re taking a while
                   </Text>
                 </li>
