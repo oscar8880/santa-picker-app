@@ -111,7 +111,7 @@ exports[`matches snapshot 1`] = `
                           id="participantName0"
                           name="participantName0"
                           type="text"
-                          value="Test0"
+                          value="Oscar"
                         />
                       </div>
                     </div>
@@ -136,7 +136,7 @@ exports[`matches snapshot 1`] = `
                           id="participantEmail0"
                           name="participantEmail0"
                           type="text"
-                          value="test0@test.com"
+                          value="oscar@zealley.com"
                         />
                       </div>
                     </div>
@@ -438,7 +438,7 @@ exports[`matches snapshot 1`] = `
                       id="organiserName"
                       name="organiserName"
                       type="text"
-                      value=""
+                      value="Oscar"
                     />
                   </div>
                 </div>

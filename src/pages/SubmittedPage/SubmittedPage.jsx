@@ -21,7 +21,6 @@ const SubmittedPage = () => {
               <ul className={styles.SubmittedPage__BlurbTextList}>
                 <li className={styles.SubmittedPage__BlurbTextListItem}>
                   <Text appearance="h5">
-                    {' '}
                     Emails are on their way to your Secret Santas
                   </Text>
                 </li>

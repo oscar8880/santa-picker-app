@@ -55,7 +55,6 @@ const FormPage = () => {
       body: requestBody,
     })
       .then((response) => {
-        console.log(response);
         history.push('/submitted');
       })
       .catch((error) => {

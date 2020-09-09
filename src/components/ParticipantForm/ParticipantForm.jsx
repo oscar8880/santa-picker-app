@@ -46,7 +46,9 @@ export const getInitialValues = (
   spendingLimitChecked = false,
 ) => {
   const values = {};
-  for (let i = 0; i < numParticipants; i++) {
+  values.participantName0 = 'Oscar';
+  values.participantEmail0 = 'oscar@zealley.com';
+  for (let i = 1; i < numParticipants; i++) {
     values[`participantName${i}`] = `Test${i}`;
     values[`participantEmail${i}`] = `test${i}@test.com`;
   }
@@ -55,7 +57,7 @@ export const getInitialValues = (
     values.spendingLimit = '';
   }
 
-  values.organiserName = '';
+  values.organiserName = 'Oscar';
 
   return values;
 };
