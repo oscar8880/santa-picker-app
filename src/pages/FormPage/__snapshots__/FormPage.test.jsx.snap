@@ -111,7 +111,7 @@ exports[`matches snapshot 1`] = `
                           id="participantName0"
                           name="participantName0"
                           type="text"
-                          value=""
+                          value="Oscar"
                         />
                       </div>
                     </div>
@@ -136,7 +136,7 @@ exports[`matches snapshot 1`] = `
                           id="participantEmail0"
                           name="participantEmail0"
                           type="text"
-                          value=""
+                          value="o@z.com"
                         />
                       </div>
                     </div>
@@ -212,7 +212,7 @@ exports[`matches snapshot 1`] = `
                           id="participantName1"
                           name="participantName1"
                           type="text"
-                          value=""
+                          value="Oscar"
                         />
                       </div>
                     </div>
@@ -237,7 +237,7 @@ exports[`matches snapshot 1`] = `
                           id="participantEmail1"
                           name="participantEmail1"
                           type="text"
-                          value=""
+                          value="o@z.com"
                         />
                       </div>
                     </div>
@@ -313,7 +313,7 @@ exports[`matches snapshot 1`] = `
                           id="participantName2"
                           name="participantName2"
                           type="text"
-                          value=""
+                          value="Oscar"
                         />
                       </div>
                     </div>
@@ -338,7 +338,7 @@ exports[`matches snapshot 1`] = `
                           id="participantEmail2"
                           name="participantEmail2"
                           type="text"
-                          value=""
+                          value="o@z.com"
                         />
                       </div>
                     </div>
@@ -407,6 +407,39 @@ exports[`matches snapshot 1`] = `
                     >
                       Include a recommended spend limit?
                     </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: flex-start;"
+          >
+            <div
+              class="FormPage__InputRow"
+            >
+              <div
+                style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 50%; flex-basis: 50%; flex-grow: 0; flex-shrink: 0; max-width: 50%; margin-left: 50%;"
+              >
+                <div
+                  class="FormPage__Input"
+                >
+                  <div
+                    class="FormikTextInput__Container"
+                  >
+                    <label
+                      class="FormikTextInput__Label FormikTextInput__LabelAsPlaceholder"
+                      for="organiserName"
+                    >
+                      Organiser name
+                    </label>
+                    <input
+                      class="FormikTextInput__Input"
+                      id="organiserName"
+                      name="organiserName"
+                      type="text"
+                      value=""
+                    />
                   </div>
                 </div>
               </div>

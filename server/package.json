@@ -11,7 +11,7 @@
     "watch": "tsc -w",
     "prebuild": "rimraf \"./build/**/*\"",
     "build": "tsc",
-    "test": "echo \"no tests specified\" && exit 0"
+    "test": "jest --watch"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.2.5",
@@ -24,6 +24,9 @@
     "nodemon": "^2.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
     "@types/cookie-parser": "^1.4.2",
     "@types/cors": "^2.8.6",
     "@types/debug": "^4.1.5",
@@ -31,7 +34,9 @@
     "@types/helmet": "^0.0.45",
     "@types/morgan": "^1.9.0",
     "@types/node": "^13.9.1",
+    "babel-jest": "^26.3.0",
     "concurrently": "^5.1.0",
+    "jest": "^26.4.2",
     "rimraf": "^3.0.2",
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
