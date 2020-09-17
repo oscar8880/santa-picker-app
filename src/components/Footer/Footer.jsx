@@ -11,7 +11,7 @@ const Footer = () => {
           appearance="none"
           tagName="a"
           target="_blank"
-          href="https://github.com/oscar8880"
+          href="https://github.com/oscar8880/santa-picker"
         >
           <GithubIcon width={24} />
         </Action>

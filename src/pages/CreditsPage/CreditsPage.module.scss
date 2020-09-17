@@ -4,4 +4,41 @@
 .CreditsPage {
   display: flex;
   flex-direction: column;
+  padding-top: $spacer-10;
+  @media (min-width: $breakpoint-md) {
+    padding-bottom: $spacer-12;
+    padding-top: $spacer-12;
+  }
+}
+
+.CreditsPage__Title {
+  padding-bottom: $spacer-8;
+  text-align: center;
+  @media (min-width: $breakpoint-md) {
+    text-align: left;
+  }
+}
+
+.CreditsPage__CreditList {
+  list-style: none;
+  padding-bottom: $spacer-4;
+  text-align: center;
+  @media (min-width: $breakpoint-md) {
+    text-align: left;
+  }
+}
+
+.CreditsPage__CreditListItem {
+  color: $grey-500;
+  padding-bottom: $spacer-6;
+}
+
+.CreditsPage__CTA {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $spacer-8;
+
+  @media (min-width: $breakpoint-md) {
+    justify-content: flex-start;
+  }
 }
