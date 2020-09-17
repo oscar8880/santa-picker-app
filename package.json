@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "start:server": "cd server && yarn start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "yarn stylelint && yarn eslint && yarn prettier",
