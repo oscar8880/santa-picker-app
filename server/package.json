@@ -23,6 +23,7 @@
     "helmet": "^3.21.3",
     "jwks-rsa": "^1.9.0",
     "morgan": "~1.9.1",
+    "rimraf": "^3.0.2",
     "nodemon": "^2.0.2"
   },
   "devDependencies": {
@@ -39,7 +40,6 @@
     "babel-jest": "^26.3.0",
     "concurrently": "^5.1.0",
     "jest": "^26.4.2",
-    "rimraf": "^3.0.2",
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
   }
