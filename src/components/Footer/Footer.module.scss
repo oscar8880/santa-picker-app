@@ -7,8 +7,14 @@
   background-image: url($argyle-background);
   color: $white;
   display: flex;
-  height: 50px;
-  justify-content: center;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-evenly;
+}
+
+.Footer__LinkRow {
+  align-items: center;
+  display: flex;
 }
 
 .Footer__Item {

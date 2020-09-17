@@ -6,6 +6,7 @@ import styles from './Routes.module.scss';
 import CreditsPage from './CreditsPage/CreditsPage';
 import SubmittedPage from './SubmittedPage/SubmittedPage';
 import ErrorPage from './ErrorPage/ErrorPage';
+import PrivacyPage from './PrivacyPage/PrivacyPage';
 import PrivateRoute from '../components/PrivateRoute/PrivateRoute';
 
 const Routes = () => {
@@ -28,6 +29,9 @@ const Routes = () => {
         </Route>
         <Route path="/credits" exact>
           <CreditsPage />
+        </Route>
+        <Route path="/privacy" exact>
+          <PrivacyPage />
         </Route>
         <Route path="*">
           <Redirect to="/" />

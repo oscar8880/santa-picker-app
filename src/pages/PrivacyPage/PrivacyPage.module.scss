@@ -1,17 +1,17 @@
 @import "../../scss/functions";
 @import "../../scss/variables";
 
-.CreditsPage {
+.PrivacyPage {
   display: flex;
   flex-direction: column;
+  padding-bottom: $spacer-12;
   padding-top: $spacer-10;
   @media (min-width: $breakpoint-md) {
-    padding-bottom: $spacer-12;
     padding-top: $spacer-12;
   }
 }
 
-.CreditsPage__Title {
+.PrivacyPage__Title {
   padding-bottom: $spacer-8;
   text-align: center;
   @media (min-width: $breakpoint-md) {
@@ -20,21 +20,24 @@
   }
 }
 
-.CreditsPage__CreditList {
-  list-style: none;
-  padding-bottom: $spacer-10;
+.PrivacyPage__Subtitle {
+  padding-bottom: $spacer-6;
   text-align: center;
   @media (min-width: $breakpoint-md) {
     text-align: left;
   }
 }
 
-.CreditsPage__CreditListItem {
+.PrivacyPage__Text {
   color: $grey-500;
-  padding-bottom: $spacer-4;
+  padding-bottom: $spacer-6;
+  text-align: center;
+  @media (min-width: $breakpoint-md) {
+    text-align: left;
+  }
 }
 
-.CreditsPage__CTA {
+.PrivacyPage__CTA {
   display: flex;
   justify-content: center;
   padding-bottom: $spacer-8;

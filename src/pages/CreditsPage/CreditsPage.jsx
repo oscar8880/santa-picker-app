@@ -11,25 +11,13 @@ const CreditsPage = () => {
       <PageWrapper>
         <Container fluid>
           <Row>
-            <Col xs={12} md={8} lg={8}>
+            <Col xs={12} md={7} lg={7}>
               <div className={styles.CreditsPage__Title}>
-                <Text appearance="h6" tagName="h1">
+                <Text appearance="h1" tagName="h1">
                   Credits
                 </Text>
               </div>
               <ul className={styles.CreditsPage__CreditList}>
-                <li className={styles.CreditsPage__CreditListItem}>
-                  <Text>
-                    Header/footer background ‘Argyle’ made by Will Monson from:
-                    <Action
-                      href="https://www.flaticon.com/authors/pixelmeetup"
-                      title="Pixelmeetup"
-                      appearance="a"
-                    >
-                      https://www.transparenttextures.com
-                    </Action>
-                  </Text>
-                </li>
                 <li className={styles.CreditsPage__CreditListItem}>
                   <Text>
                     Icons made by{' '}
@@ -64,6 +52,18 @@ const CreditsPage = () => {
                 </li>
                 <li className={styles.CreditsPage__CreditListItem}>
                   <Text></Text>
+                </li>
+                <li className={styles.CreditsPage__CreditListItem}>
+                  <Text>
+                    Header/footer background ‘Argyle’ made by Will Monson from:
+                    <Action
+                      href="https://www.flaticon.com/authors/pixelmeetup"
+                      title="Pixelmeetup"
+                      appearance="a"
+                    >
+                      https://www.transparenttextures.com
+                    </Action>
+                  </Text>
                 </li>
               </ul>
               <div className={styles.CreditsPage__CTA}>
