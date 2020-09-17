@@ -5,7 +5,6 @@
   background-color: $primary-colour;
   background-image: url($argyle-background);
   color: $white;
-  font-family: $font-family-headings;
   height: 120px;
 }
 
@@ -14,15 +13,34 @@
   display: flex;
   flex-direction: row;
   height: 100%;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 948px;
+  padding-left: $spacer-6;
+  padding-right: $spacer-6;
+  @media (min-width: $breakpoint-lg) {
+    padding-right: $spacer-12;
+  }
+}
+
+.Header__Banner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   @media (min-width: $breakpoint-lg) {
     justify-content: flex-start;
-    padding-left: $spacer-6;
   }
 }
 
 .Header__Text {
+  font-family: $font-family-headings;
   padding-left: $spacer-2;
+}
+
+.Header__Authentication {
+  padding-left: $spacer-6;
+  @media (min-width: $breakpoint-lg) {
+    padding-right: $spacer-12;
+  }
 }

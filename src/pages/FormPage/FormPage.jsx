@@ -14,6 +14,7 @@ import {
   getInitialValues,
 } from '../../components/ParticipantForm/ParticipantForm';
 import { request, defaultOptions } from '../../utils/request';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const FormPage = () => {
   const [numParticipants, setNumParticipants] = useState(3);
@@ -24,6 +25,20 @@ const FormPage = () => {
   const [validationSchema, setValidationSchema] = useState(
     getFormValidationSchema(numParticipants, spendingLimitChecked),
   );
+  const [accessToken, setAccessToken] = useState('');
+
+  const { getAccessTokenSilently } = useAuth0();
+
+  useEffect(() => {
+    getAccessTokenSilently()
+      .then((response) => {
+        console.log(accessToken);
+        setAccessToken(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []); // eslint-disable-line
 
   useEffect(() => {
     setInitialValues(getInitialValues(numParticipants, spendingLimitChecked));
@@ -51,10 +66,11 @@ const FormPage = () => {
       method: 'POST',
       headers: {
         ...defaultOptions.headers,
+        Authorization: `Bearer ${accessToken}`,
       },
       body: requestBody,
     })
-      .then((response) => {
+      .then(() => {
         history.push('/submitted');
       })
       .catch((error) => {

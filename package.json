@@ -17,6 +17,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^1.0.0",
     "formik": "^2.1.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

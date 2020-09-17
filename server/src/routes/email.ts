@@ -26,11 +26,8 @@ router.post('/', async (req, res) => {
       },
     };
   });
-  console.log(pairedContacts);
-  console.log(organiserName);
-  console.log(spendingLimit);
   sgMail
-    .send(emails[0])
+    .send(emails)
     .then((response) => {
       console.log(response);
       const status = 200;

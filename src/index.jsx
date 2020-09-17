@@ -7,6 +7,7 @@ import history from './history';
 import './scss/index.scss';
 
 import App from './App';
+import AuthProviderWithHistory from './components/AuthProviderWithHistory/AuthProviderWithHistory';
 
 setConfiguration({
   gutterWidth: 40,
@@ -16,7 +17,9 @@ setConfiguration({
 ReactDOM.render(
   <React.StrictMode>
     <Router history={history}>
-      <App />
+      <AuthProviderWithHistory>
+        <App />
+      </AuthProviderWithHistory>
     </Router>
   </React.StrictMode>,
   document.getElementById('root'),

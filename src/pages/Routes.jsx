@@ -6,6 +6,7 @@ import styles from './Routes.module.scss';
 import CreditsPage from './CreditsPage/CreditsPage';
 import SubmittedPage from './SubmittedPage/SubmittedPage';
 import ErrorPage from './ErrorPage/ErrorPage';
+import PrivateRoute from '../components/PrivateRoute/PrivateRoute';
 
 const Routes = () => {
   return (
@@ -14,9 +15,11 @@ const Routes = () => {
         <Route path="/" exact>
           <HomePage />
         </Route>
-        <Route path="/form" exact>
-          <FormPage />
-        </Route>
+        <PrivateRoute
+          render={() => <FormPage />}
+          path="/form"
+          exact
+        ></PrivateRoute>
         <Route path="/submitted" exact>
           <SubmittedPage />
         </Route>
