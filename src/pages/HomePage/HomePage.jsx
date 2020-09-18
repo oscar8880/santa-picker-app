@@ -1,12 +1,23 @@
 import styles from './HomePage.module.scss';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Text from '../../components/Text/Text';
 import Action from '../../components/Action/Action';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import { Container, Row, Col } from 'react-grid-system';
 import presentImage from '../../images/chimneyPresent.png';
+import { request, defaultOptions } from '../../utils/request';
 
 const HomePage = () => {
+  useEffect(() => {
+    request('/', {
+      ...defaultOptions,
+      method: 'GET',
+      headers: {
+        ...defaultOptions.headers,
+      },
+    }).then((response) => console.log(response));
+  });
+
   return (
     <div className={styles.HomePage}>
       <PageWrapper>
