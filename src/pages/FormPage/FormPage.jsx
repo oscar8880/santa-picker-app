@@ -26,6 +26,7 @@ const FormPage = () => {
     getFormValidationSchema(numParticipants, spendingLimitChecked),
   );
   const [accessToken, setAccessToken] = useState('');
+  const [isProcessing, setIsProcessing] = useState(false);
 
   const { getAccessTokenSilently } = useAuth0();
 
@@ -47,6 +48,7 @@ const FormPage = () => {
   }, [numParticipants, spendingLimitChecked]);
 
   const handleSubmit = (values) => {
+    setIsProcessing(true);
     const requestBody = {
       organiserName: values.organiserName,
       spendingLimit: values.spendingLimit,
@@ -212,8 +214,9 @@ const FormPage = () => {
                         fullWidth={true}
                         type="submit"
                         appearance="button-secondary"
+                        disabled={isProcessing}
                       >
-                        Submit
+                        {isProcessing ? 'Submitting...' : 'Submit'}
                       </Action>
                     </div>
                   </Col>
