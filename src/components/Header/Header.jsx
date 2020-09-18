@@ -22,7 +22,19 @@ const Header = () => {
   );
 
   const LogoutButton = () => (
-    <Action appearance="none" tagName="button" type="button" onClick={logout}>
+    <Action
+      appearance="none"
+      tagName="button"
+      type="button"
+      onClick={() =>
+        logout({
+          returnTo:
+            process.env.NODE_ENV === 'development'
+              ? 'http://localhost:3000'
+              : 'https://santa-picker.netlify.app',
+        })
+      }
+    >
       <LogoutIcon width={35} />
     </Action>
   );
