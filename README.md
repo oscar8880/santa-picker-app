@@ -1,15 +1,21 @@
-## Table of Contents
-
-- [About the Project](#about-the-project)
-- [Built With](#built-with)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-
 <p align="center">
   <a href="https://github.com/oscar8880/santa-picker-app">
   <img src="./images/logo.png" alt="Logo" height="120">
   </a>
+
+  <h3 align="center">Santa Picker</h3>
+  <p align="center">
+    Secret Santa by email!
+    <a href="https://santa-picker.netlify.app/">View site</a>
+  </p>
 </p>
+
+## Table of Contents
+
+- [About the Project](#about)
+- [Built With](#built-with)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
 ## About
 
