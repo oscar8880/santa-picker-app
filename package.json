@@ -84,6 +84,5 @@
     "src/**/*.{ts,tsx,js,jsx,json,css,scss}": [
       "prettier --config .prettierrc.json --write"
     ]
-  },
-  "proxy": "https://santa-picker-api.herokuapp.com/"
+  }
 }
