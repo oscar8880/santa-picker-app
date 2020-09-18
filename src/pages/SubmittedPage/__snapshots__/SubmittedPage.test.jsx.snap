@@ -67,6 +67,7 @@ exports[`matches snapshot 1`] = `
             >
               <img
                 alt="Sleigh"
+                height="80%"
                 src="sleigh.png"
                 width="80%"
               />

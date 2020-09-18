@@ -39,7 +39,12 @@ const SubmittedPage = () => {
             </Col>
             <Col xs={12} md={6} lg={5} offset={{ lg: 1 }}>
               <div className={styles.SubmittedPage__Image}>
-                <img src={sleighImage} alt="Sleigh" width="80%"></img>
+                <img
+                  src={sleighImage}
+                  alt="Sleigh"
+                  width="80%"
+                  height="80%"
+                ></img>
               </div>
             </Col>
           </Row>

@@ -43,7 +43,12 @@ const ErrorPage = () => {
             </Col>
             <Col xs={12} md={6} lg={5} offset={{ lg: 1 }}>
               <div className={styles.ErrorPage__Image}>
-                <img src={chimneySantaImage} alt="Sleigh" width="80%"></img>
+                <img
+                  src={chimneySantaImage}
+                  alt="Sleigh"
+                  width="80%"
+                  height="80%"
+                ></img>
               </div>
             </Col>
           </Row>

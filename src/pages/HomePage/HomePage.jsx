@@ -48,7 +48,12 @@ const HomePage = () => {
             </Col>
             <Col xs={12} md={6} lg={5} offset={{ lg: 1 }}>
               <div className={styles.HomePage__Image}>
-                <img src={presentImage} alt="Sleigh" width="80%"></img>
+                <img
+                  src={presentImage}
+                  alt="Sleigh"
+                  width="80%"
+                  height="80%"
+                ></img>
               </div>
             </Col>
           </Row>
