@@ -3,9 +3,8 @@
   <img src="./images/logo.png" alt="Logo" height="120">
   </a>
 
-  <h3 align="center">Santa Picker</h3>
+  <h3 align="center">Secret Santa by email!</h3>
   <p align="center">
-    Secret Santa by email!
     <a href="https://santa-picker.netlify.app/">View site</a>
   </p>
 </p>
