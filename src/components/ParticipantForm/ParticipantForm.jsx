@@ -86,7 +86,10 @@ export const generateNameAndEmailFields = (numParticipants = 3) => {
               >
                 <SantaHatIcon width={25} />
               </div>
-              <Text appearance="h5">{`Participant ${i + 1}`}</Text>
+              <Text appearance="h5">
+                {`Participant ${i + 1}`}
+                {i === 0 && ' (you)'}
+              </Text>
             </div>
           </Col>
         </Row>
