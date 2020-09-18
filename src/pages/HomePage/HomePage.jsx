@@ -9,7 +9,7 @@ import { request, defaultOptions } from '../../utils/request';
 
 const HomePage = () => {
   useEffect(() => {
-    request('/', {
+    request('', {
       ...defaultOptions,
       method: 'GET',
       headers: {
