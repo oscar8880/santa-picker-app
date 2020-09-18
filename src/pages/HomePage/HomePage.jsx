@@ -15,7 +15,14 @@ const HomePage = () => {
       headers: {
         ...defaultOptions.headers,
       },
-    }).then((response) => console.log(response));
+    }).then((response) => console.log('1' + response));
+    request('https://santa-picker-api.herokuapp.com', {
+      ...defaultOptions,
+      method: 'GET',
+      headers: {
+        ...defaultOptions.headers,
+      },
+    }).then((response) => console.log('2' + response));
   });
 
   return (
