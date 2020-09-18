@@ -32,7 +32,6 @@ const FormPage = () => {
   useEffect(() => {
     getAccessTokenSilently()
       .then((response) => {
-        console.log(accessToken);
         setAccessToken(response);
       })
       .catch((error) => {
