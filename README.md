@@ -1,7 +1,7 @@
 # Santa Picker App
 
 <p align="center">
-  <img src="screenshot.png" alt="Screenshot" height="200">
+  <img src="screenshot.png" alt="Screenshot" height="300">
 </p>
 
 Santa Picker is a React web application for drawing secret santa names and emailing the results anonymously.
