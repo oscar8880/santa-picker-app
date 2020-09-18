@@ -5,7 +5,7 @@ module.exports = function expressMiddleware(router) {
   router.use(
     '/api',
     proxy({
-      target: 'http://localhost:5000',
+      target: 'https://santa-picker-api.herokuapp.com',
       pathRewrite: {
         '^/api': '',
       },
