@@ -5,10 +5,7 @@ module.exports = function expressMiddleware(router) {
   router.use(
     '/api',
     proxy({
-      target:
-        process.env.NODE_ENV === 'development'
-          ? 'http://localhost:3000'
-          : 'https://santa-picker.netlify.app',
+      target: 'http://localhost:5000',
       pathRewrite: {
         '^/api': '',
       },
