@@ -2,21 +2,18 @@
   <a href="https://github.com/oscar8880/santa-picker-app">
   <img src="./images/logo.png" alt="Logo" height="120">
   </a>
-
-  <h3 align="center">Secret Santa by email!</h3>
-  <p align="center">
-    <a href="https://santa-picker.netlify.app/">View site</a>
-  </p>
 </p>
 
 ## Table of Contents
 
-- [About the Project](#about)
+- [About](#about)
 - [Built With](#built-with)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ## About
+
+![Screenshot](images/screenshot.png?raw=true)
 
 Santa Picker is a React web application for drawing secret santa names and emailing the results anonymously.
 
