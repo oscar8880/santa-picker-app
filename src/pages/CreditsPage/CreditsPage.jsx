@@ -66,11 +66,6 @@ const CreditsPage = () => {
                   </Text>
                 </li>
               </ul>
-              <div className={styles.CreditsPage__CTA}>
-                <Action tagName="Link" to="/" appearance="button-secondary">
-                  Home
-                </Action>
-              </div>
             </Col>
           </Row>
         </Container>

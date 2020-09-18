@@ -15,7 +15,7 @@ const HomePage = () => {
       headers: {
         ...defaultOptions.headers,
       },
-    }).then((response) => console.log('1 ' + response));
+    });
   });
 
   return (

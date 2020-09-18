@@ -31,7 +31,11 @@ Text.propTypes = {
     'banner',
   ]),
   className: PropTypes.string,
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.node,
+  ]),
 };
 
 export default Text;

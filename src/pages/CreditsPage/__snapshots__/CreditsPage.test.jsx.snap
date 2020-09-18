@@ -5,7 +5,100 @@ exports[`matches snapshot 1`] = `
   <div
     class="CreditsPage"
   >
-    Credits Page
+    <div
+      class="PageWrapper"
+    >
+      <div
+        style="box-sizing: border-box; position: relative; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;"
+      >
+        <div
+          style="margin-left: -15px; margin-right: -15px; display: flex; flex-wrap: wrap; flex-grow: 0; flex-shrink: 0; align-items: normal; justify-content: flex-start;"
+        >
+          <div
+            style="box-sizing: border-box; min-height: 1px; position: relative; padding-left: 15px; padding-right: 15px; width: 58.333333333333336%; flex-basis: 58.333333333333336%; flex-grow: 0; flex-shrink: 0; max-width: 58.333333333333336%; margin-left: 0%;"
+          >
+            <div
+              class="CreditsPage__Title"
+            >
+              <h1
+                class="Text Text__h1"
+              >
+                Credits
+              </h1>
+            </div>
+            <ul
+              class="CreditsPage__CreditList"
+            >
+              <li
+                class="CreditsPage__CreditListItem"
+              >
+                <p
+                  class="Text Text__p"
+                >
+                  Icons made by 
+                  <button
+                    class="Action Action__Appearance--a"
+                    href="https://www.flaticon.com/authors/pixelmeetup"
+                    title="Pixelmeetup"
+                  >
+                    Pixelmeetup
+                  </button>
+                  , 
+                  <button
+                    class="Action Action__Appearance--a"
+                    href="http://www.freepik.com/"
+                    title="Freepik"
+                  >
+                    Freepik
+                  </button>
+                   and 
+                  <button
+                    class="Action Action__Appearance--a"
+                    href="https://www.flaticon.com/authors/pixel-perfect"
+                    title="Pixel perfect"
+                  >
+                    Pixel Perfect
+                  </button>
+                   from: 
+                  <a
+                    href="https://www.flaticon.com/"
+                    title="Flaticon"
+                  >
+                    www.flaticon.com
+                  </a>
+                </p>
+              </li>
+              <li
+                class="CreditsPage__CreditListItem"
+              >
+                <p
+                  class="Text Text__p"
+                />
+              </li>
+              <li
+                class="CreditsPage__CreditListItem"
+              >
+                <p
+                  class="Text Text__p"
+                >
+                  Header/footer background ‘Argyle’ made by Will Monson from:
+                  <button
+                    class="Action Action__Appearance--a"
+                    href="https://www.flaticon.com/authors/pixelmeetup"
+                    title="Pixelmeetup"
+                  >
+                    https://www.transparenttextures.com
+                  </button>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span
+          style="display: table; clear: both;"
+        />
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
