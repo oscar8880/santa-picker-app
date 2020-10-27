@@ -6,6 +6,7 @@ import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import FormikTextInput from '../../components/FormikTextInput/FormikTextInput';
 import { Container, Row, Col } from 'react-grid-system';
 import { Formik, Form } from 'formik';
+import ReactGA from 'react-ga';
 import history from '../../history';
 import FormikCheckbox from '../../components/FormikCheckbox/FormikCheckbox';
 import {
@@ -48,6 +49,10 @@ const FormPage = () => {
   }, [numParticipants, spendingLimitChecked]);
 
   const handleSubmit = (values) => {
+    ReactGA.event({
+      category: 'Form',
+      action: 'Form Submit',
+    });
     setIsProcessing(true);
     const requestBody = {
       organiserName: values.organiserName,
