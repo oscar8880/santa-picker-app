@@ -6,6 +6,9 @@ import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import { Container, Row, Col } from 'react-grid-system';
 import presentImage from '../../images/chimneyPresent.png';
 import { request, defaultOptions } from '../../utils/request';
+import ReactGA from 'react-ga';
+
+ReactGA.pageview('/');
 
 const HomePage = () => {
   useEffect(() => {

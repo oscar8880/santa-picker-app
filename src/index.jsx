@@ -11,7 +11,10 @@ import App from './App';
 import AuthProviderWithHistory from './components/AuthProviderWithHistory/AuthProviderWithHistory';
 
 const trackingId = process.env.REACT_APP_GA_TRACKING_ID;
-ReactGA.initialize(trackingId);
+ReactGA.initialize(trackingId, {
+  debug: true,
+  titleCase: false,
+});
 
 setConfiguration({
   gutterWidth: 40,
