@@ -17,7 +17,7 @@ const PrivacyPage = () => {
                 </Text>
               </div>
               <div className={styles.PrivacyPage__Text}>
-                <Text>Version: September 10, 2020</Text>
+                <Text>Version: October 28, 2020</Text>
               </div>
               <div className={styles.PrivacyPage__Text}>
                 <Text>
@@ -60,6 +60,17 @@ const PrivacyPage = () => {
               </div>
               <div className={styles.PrivacyPage__Text}>
                 <Text>No other personal data is stored.</Text>
+              </div>
+              <div className={styles.PrivacyPage__Subtitle}>
+                <Text tagName="h2" appearance="h5">
+                  Google Analytics
+                </Text>
+              </div>
+              <div className={styles.PrivacyPage__Text}>
+                <Text>
+                  Anonymous site usage data is collected via Google Analytics.
+                  No user-specifc information is stored.
+                </Text>
               </div>
             </Col>
           </Row>
