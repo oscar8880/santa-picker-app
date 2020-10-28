@@ -52,6 +52,7 @@ const FormPage = () => {
     ReactGA.event({
       category: 'Form',
       action: 'Form Submit',
+      value: numParticipants,
     });
     setIsProcessing(true);
     const requestBody = {
