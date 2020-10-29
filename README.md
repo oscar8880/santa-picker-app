@@ -34,7 +34,9 @@ Emails are sent using Sendgrid via a Node.js backend, the repo for which can be 
 - [Prettier](https://prettier.io/) - Code formatter
 - [Stylelint](https://stylelint.io/) - CSS formatter
 - [Auth0](https://auth0.com/) - Authentication
+- [Google Analytics](https://analytics.google.com/analytics/web/) - Site analytics
 - [Formik](https://formik.org/) - Form library
+- [React Spring](https://www.react-spring.io/) - Animation library
 - [Storybook](https://storybook.js.org/) - Component creation tool
 - [Transparent Textures](https://www.transparenttextures.com) - Background images
 - [Flaticon](www.flaticon.com) - Icons
