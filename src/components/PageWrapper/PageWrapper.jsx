@@ -8,7 +8,11 @@ const PageWrapper = ({ children }) => (
 );
 
 PageWrapper.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.element,
+    PropTypes.any,
+  ]),
 };
 
 export default PageWrapper;

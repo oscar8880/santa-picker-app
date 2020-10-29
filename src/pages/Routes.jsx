@@ -21,16 +21,16 @@ const Routes = () => {
           path="/form"
           exact
         ></PrivateRoute>
-        <Route path="/submitted" exact>
+        <Route path="/submitted">
           <SubmittedPage />
         </Route>
-        <Route path="/error" exact>
+        <Route path="/error">
           <ErrorPage />
         </Route>
-        <Route path="/credits" exact>
+        <Route path="/credits">
           <CreditsPage />
         </Route>
-        <Route path="/privacy" exact>
+        <Route path="/privacy">
           <PrivacyPage />
         </Route>
         <Route path="*">
