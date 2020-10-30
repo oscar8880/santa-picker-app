@@ -8,18 +8,28 @@ import sleighImage from '../../images/sleigh.png';
 import { useSpring, animated, config } from 'react-spring';
 import { ParticipantContext } from '../../context/ParticipantContext';
 import { simpleCypher } from '../../utils/simpleCypher';
+import CopyIcon from '../../components/Icons/CopyIcon/CopyIcon';
 
 const SubmittedPage = () => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => setLoaded(true), []);
   const { participantsData } = useContext(ParticipantContext);
 
-  const resultLinks = participantsData.contacts.map((contacts) => {
-    return `${participantsData.spendingLimit || '_'}Y${simpleCypher(
-      contacts.contact.name,
-    )}J${simpleCypher(contacts.assignedContact.name)}T${simpleCypher(
-      participantsData.organiserName,
-    )}`;
+  const copyToClipboard = (string) => {
+    navigator.clipboard.writeText(string);
+  };
+
+  const resultLinkBase =
+    process.env.NODE_ENV === 'development'
+      ? 'http://localhost:3000/result/'
+      : 'https://santa-picker.netlify.app/result/';
+
+  const resultLinks = participantsData.contacts.map((contactData) => {
+    return `${resultLinkBase}${
+      participantsData.spendingLimit || '_'
+    }Y${simpleCypher(contactData.contact.name)}J${simpleCypher(
+      contactData.assignedContact.name,
+    )}T${simpleCypher(participantsData.organiserName)}`;
   });
 
   const contentProps = useSpring({
@@ -27,6 +37,42 @@ const SubmittedPage = () => {
     opacity: loaded ? 1 : 0,
     marginTop: loaded ? 0 : -70,
   });
+
+  const handleTextAreaFocus = (event) => event.target.select();
+
+  const linkAssignments = (
+    <ul className={styles.SubmittedPage__BlurbTextList}>
+      {participantsData.contacts.map((contactData, i) => {
+        return (
+          <li
+            key={resultLinks[i]}
+            className={styles.SubmittedPage__BlurbTextListItem}
+          >
+            <Text appearance="h5" className={styles.SubmittedPage__Name}>
+              {contactData.contact.name}
+            </Text>
+            <div className={styles.SubmittedPage__LinkContainer}>
+              <textarea
+                onClick={handleTextAreaFocus}
+                readOnly
+                className={styles.SubmittedPage__TextArea}
+              >
+                {resultLinks[i]}
+              </textarea>
+              <Action
+                tagName="button"
+                type="button"
+                onClick={copyToClipboard(resultLinks[i])}
+                className={styles.SubmittedPage__CopyButton}
+              >
+                <CopyIcon width={25} />
+              </Action>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
 
   return (
     <div className={styles.SubmittedPage}>
@@ -55,31 +101,12 @@ const SubmittedPage = () => {
                     </li>
                     <li className={styles.SubmittedPage__BlurbTextListItem}>
                       <Text appearance="h5">
-                        Alternatively send your santas their personalised link
-                        below
+                        Alternatively, send your santas their personalised link
+                        below:
                       </Text>
                     </li>
                   </ul>
-                  {participantsData.contacts
-                    .sort((a, b) => {
-                      return a.contact.name < b.contact.name ? -1 : 1;
-                    })
-                    .map((contact, i) => {
-                      return (
-                        <>
-                          <p key={contact.contact.name}>
-                            {contact.contact.name} has been assigned{' '}
-                            {contact.assignedContact.name}
-                          </p>
-                          <Action
-                            tagName="Link"
-                            to={encodeURI(`/result/${resultLinks[i]}`)}
-                          >
-                            Link
-                          </Action>
-                        </>
-                      );
-                    })}
+                  {linkAssignments}
                   <div className={styles.SubmittedPage__CTA}>
                     <Action tagName="Link" to="/" appearance="button-secondary">
                       Back

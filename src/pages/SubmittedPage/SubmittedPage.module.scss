@@ -33,14 +33,35 @@
   padding-bottom: $spacer-6;
 }
 
-.SubmittedPage__CTA {
-  display: flex;
-  justify-content: center;
-  padding-bottom: $spacer-8;
+.SubmittedPage__Name {
+  color: $grey-800;
+}
 
-  @media (min-width: $breakpoint-md) {
-    justify-content: flex-start;
-  }
+.SubmittedPage__CopyButton {
+  padding-left: 0;
+  padding-right: 0;
+  width: 60px;
+}
+
+.SubmittedPage__LinkContainer {
+  display: flex;
+  margin-top: $spacer-2;
+  width: 100%;
+}
+
+.SubmittedPage__TextArea {
+  background-color: $grey-100;
+  border: none;
+  color: $grey-300;
+  font-size: $font-size-h5;
+  height: 47px;
+  padding-bottom: 0;
+  padding-left: $spacer-4;
+  padding-right: $spacer-4;
+  padding-top: 11px;
+  resize: none;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .SubmittedPage__Image {
@@ -55,4 +76,9 @@
     padding-top: $spacer-9;
     width: 100%;
   }
+}
+
+.SubmittedPage__CTA {
+  padding-bottom: $spacer-12;
+  padding-top: $spacer-4;
 }

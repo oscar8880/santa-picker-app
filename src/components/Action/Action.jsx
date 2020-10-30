@@ -9,12 +9,14 @@ const Action = ({
   appearance = 'button-primary',
   fullWidth = false,
   children,
+  className,
   ...props
 }) => {
   const Tag = tagName === 'Link' ? Link : tagName;
   return (
     <Tag
       className={classNames(
+        className,
         styles.Action,
         styles[`Action__Appearance--${appearance}`],
         {
@@ -39,6 +41,7 @@ Action.propTypes = {
     'none',
   ]),
   fullWidth: PropTypes.bool,
+  className: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 };
 
