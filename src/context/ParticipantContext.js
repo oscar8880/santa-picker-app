@@ -5,22 +5,9 @@ export const ParticipantContext = React.createContext([]);
 
 export const ParticipantProvider = ({ children }) => {
   const [participantsData, setParticipantsData] = useState({
-    contacts: [
-      {
-        assignedContact: { name: 'Oscar Zealley', email: 'oscar2@zealley.com' },
-        contact: { name: 'Oscar-Hyphen', email: 'oscar1@zealley.com' },
-      },
-      {
-        assignedContact: { name: 'Oscar-Hyphen', email: 'oscar1@zealley.com' },
-        contact: { name: 'Chris', email: 'oscar3@zealley.com' },
-      },
-      {
-        assignedContact: { name: 'Chris', email: 'oscar3@zealley.com' },
-        contact: { name: 'Oscar Zealley', email: 'oscar2@zealley.com' },
-      },
-    ],
-    organiserName: 'John',
-    spendingLimit: null,
+    contacts: [],
+    organiserName: '',
+    spendingLimit: 'null',
   });
 
   const participantContext = {

@@ -7,7 +7,7 @@ import CreditsPage from './CreditsPage/CreditsPage';
 import SubmittedPage from './SubmittedPage/SubmittedPage';
 import ErrorPage from './ErrorPage/ErrorPage';
 import PrivacyPage from './PrivacyPage/PrivacyPage';
-// import PrivateRoute from '../components/PrivateRoute/PrivateRoute';
+import PrivateRoute from '../components/PrivateRoute/PrivateRoute';
 import ResultPage from './ResultPage/ResultPage';
 
 const Routes = () => {
@@ -17,14 +17,11 @@ const Routes = () => {
         <Route path="/" exact>
           <HomePage />
         </Route>
-        {/* <PrivateRoute
+        <PrivateRoute
           render={() => <FormPage />}
           path="/form"
           exact
-        ></PrivateRoute> */}
-        <Route path="/form">
-          <FormPage />
-        </Route>
+        ></PrivateRoute>
         <Route path="/submitted">
           <SubmittedPage />
         </Route>

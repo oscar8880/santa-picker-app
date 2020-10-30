@@ -95,9 +95,11 @@ const FormPage = () => {
       },
       body: requestBody,
     })
-      .then((pairedContacts) => {
-        console.log(pairedContacts);
-        setParticipantsData(requestBody);
+      .then((contacts) => {
+        setParticipantsData({
+          ...requestBody,
+          contacts: contacts,
+        });
         history.push('/submitted');
       })
       .catch((error) => {

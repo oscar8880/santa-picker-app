@@ -15,10 +15,6 @@ const SubmittedPage = () => {
   useEffect(() => setLoaded(true), []);
   const { participantsData } = useContext(ParticipantContext);
 
-  const copyToClipboard = (string) => {
-    navigator.clipboard.writeText(string);
-  };
-
   const resultLinkBase =
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000/result/'
@@ -26,7 +22,9 @@ const SubmittedPage = () => {
 
   const resultLinks = participantsData.contacts.map((contactData) => {
     return `${resultLinkBase}${
-      participantsData.spendingLimit || '_'
+      participantsData.spendingLimit === undefined
+        ? '_'
+        : participantsData.spendingLimit
     }Y${simpleCypher(contactData.contact.name)}J${simpleCypher(
       contactData.assignedContact.name,
     )}T${simpleCypher(participantsData.organiserName)}`;
@@ -37,6 +35,10 @@ const SubmittedPage = () => {
     opacity: loaded ? 1 : 0,
     marginTop: loaded ? 0 : -70,
   });
+
+  const copyToClipboard = (index) => {
+    navigator.clipboard.writeText(resultLinks[index]);
+  };
 
   const handleTextAreaFocus = (event) => event.target.select();
 
@@ -56,13 +58,12 @@ const SubmittedPage = () => {
                 onClick={handleTextAreaFocus}
                 readOnly
                 className={styles.SubmittedPage__TextArea}
-              >
-                {resultLinks[i]}
-              </textarea>
+                value={resultLinks[i]}
+              />
               <Action
                 tagName="button"
                 type="button"
-                onClick={copyToClipboard(resultLinks[i])}
+                onClick={() => copyToClipboard(i)}
                 className={styles.SubmittedPage__CopyButton}
               >
                 <CopyIcon width={25} />
