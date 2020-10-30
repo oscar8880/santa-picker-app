@@ -1,5 +1,5 @@
 import styles from './FormPage.module.scss';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Text from '../../components/Text/Text';
 import Action from '../../components/Action/Action';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
@@ -14,6 +14,7 @@ import {
   generateNameAndEmailFields,
   getInitialValues,
 } from '../../components/ParticipantForm/ParticipantForm';
+import { ParticipantContext } from '../../context/ParticipantContext';
 import { request, defaultOptions } from '../../utils/request';
 import { useAuth0 } from '@auth0/auth0-react';
 import { useSpring, animated, config, useTransition } from 'react-spring';
@@ -30,6 +31,7 @@ const FormPage = () => {
   const [accessToken, setAccessToken] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const { setParticipantsData } = useContext(ParticipantContext);
 
   const { getAccessTokenSilently } = useAuth0();
 
@@ -93,7 +95,9 @@ const FormPage = () => {
       },
       body: requestBody,
     })
-      .then(() => {
+      .then((pairedContacts) => {
+        console.log(pairedContacts);
+        setParticipantsData(requestBody);
         history.push('/submitted');
       })
       .catch((error) => {

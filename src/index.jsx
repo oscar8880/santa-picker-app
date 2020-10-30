@@ -9,6 +9,7 @@ import './scss/index.scss';
 
 import App from './App';
 import AuthProviderWithHistory from './components/AuthProviderWithHistory/AuthProviderWithHistory';
+import { ParticipantProvider } from './context/ParticipantContext';
 
 const trackingId = process.env.REACT_APP_GA_TRACKING_ID;
 ReactGA.initialize(trackingId);
@@ -20,11 +21,13 @@ setConfiguration({
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router history={history}>
-      <AuthProviderWithHistory>
-        <App />
-      </AuthProviderWithHistory>
-    </Router>
+    <ParticipantProvider>
+      <Router history={history}>
+        <AuthProviderWithHistory>
+          <App />
+        </AuthProviderWithHistory>
+      </Router>
+    </ParticipantProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

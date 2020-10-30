@@ -1,15 +1,26 @@
 import styles from './SubmittedPage.module.scss';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Text from '../../components/Text/Text';
 import Action from '../../components/Action/Action';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import { Container, Row, Col } from 'react-grid-system';
 import sleighImage from '../../images/sleigh.png';
 import { useSpring, animated, config } from 'react-spring';
+import { ParticipantContext } from '../../context/ParticipantContext';
+import { simpleCypher } from '../../utils/simpleCypher';
 
 const SubmittedPage = () => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => setLoaded(true), []);
+  const { participantsData } = useContext(ParticipantContext);
+
+  const resultLinks = participantsData.contacts.map((contacts) => {
+    return `${participantsData.spendingLimit || '_'}Y${simpleCypher(
+      contacts.contact.name,
+    )}J${simpleCypher(contacts.assignedContact.name)}T${simpleCypher(
+      participantsData.organiserName,
+    )}`;
+  });
 
   const contentProps = useSpring({
     config: config.gentle,
@@ -42,10 +53,36 @@ const SubmittedPage = () => {
                         folder if they&apos;re taking a while
                       </Text>
                     </li>
+                    <li className={styles.SubmittedPage__BlurbTextListItem}>
+                      <Text appearance="h5">
+                        Alternatively send your santas their personalised link
+                        below
+                      </Text>
+                    </li>
                   </ul>
+                  {participantsData.contacts
+                    .sort((a, b) => {
+                      return a.contact.name < b.contact.name ? -1 : 1;
+                    })
+                    .map((contact, i) => {
+                      return (
+                        <>
+                          <p key={contact.contact.name}>
+                            {contact.contact.name} has been assigned{' '}
+                            {contact.assignedContact.name}
+                          </p>
+                          <Action
+                            tagName="Link"
+                            to={encodeURI(`/result/${resultLinks[i]}`)}
+                          >
+                            Link
+                          </Action>
+                        </>
+                      );
+                    })}
                   <div className={styles.SubmittedPage__CTA}>
                     <Action tagName="Link" to="/" appearance="button-secondary">
-                      Home
+                      Back
                     </Action>
                   </div>
                 </Col>
